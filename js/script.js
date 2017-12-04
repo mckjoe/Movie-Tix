@@ -4,9 +4,9 @@ function Ticket(movie, time, age) {
   this.age = age;
 }
 
-Ticket.prototype.viewTicket = function(){
-  return "Movie: " + this.movie + " Time: " + this.time + " Age: " + this.age;
-}
+// Ticket.prototype.viewTicket = function(){
+//   return "Movie: " + this.movie + " Time: " + this.time + " Age: " + this.age;
+// }
 
 Ticket.prototype.ticketCost = function() {
   var cost = 0;
@@ -32,9 +32,8 @@ $(document).ready(function() {
     var age = $("#age").val();
     var time = $("#time").val();
     var newTicket = new Ticket(movie, time, age);
-    var ticketFace = newTicket.viewTicket();
+    // var ticketFace = newTicket.viewTicket();
     var ticketTotal = newTicket.ticketCost();
-    console.log(ticketTotal);
     $("#form-div").hide();
     $(".movie").text(movie);
     $(".time").text(time);
