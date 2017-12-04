@@ -16,29 +16,31 @@
       <form id="userInput">
         <p>Please select a movie:</p>
         <div class="form-group">
-          <select class="form-control" id="Movie">
-            <option value="1">Please select one:</option>
-            <option value="2">Dazed and Confused</option>
-            <option value="3">Indiana Jones and the Last Crusade</option>
-            <option value="4">Rosemary's Baby</option>
-            <option value="5">I got the Hook-up</option>
+          <select class="form-control" id="movie">
+            <option>Please select one:</option>
+            <option>Dazed and Confused</option>
+            <option>Indiana Jones and the Last Crusade</option>
+            <option>Rosemary's Baby</option>
+            <option>I got the Hook-up</option>
           </select>
         </div>
-        <select class="form-control" id="age">
-          <option>Please select one:</option>
-          <option value="1">6-12</option>
-          <option value="2">13-16</option>
-          <option value="3">17-64</option>
-          <option value="4">65+</option>
-        </select>
-        <select class="form-control" id="time">
-          <option>Please select one:</option>
-          <option>Noon</option>
-          <option value="1">2:00 PM</option>
-          <option value="2">5:00 PM</option>
-          <option value="3">7:00 PM</option>
-          <option value="4">9:00 PM</option>
-        </select>
+        <div class="form-group">
+          <select class="form-control" id="age">
+            <option>Please select one:</option>
+            <option>Adult</option>
+            <option>Senior</option>
+            <option>Child</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <select class="form-control" id="time">
+            <option>Please select one:</option>
+            <option>2:00 PM</option>
+            <option>5:00 PM</option>
+            <option>7:00 PM</option>
+            <option>9:00 PM</option>
+          </select>
+        </div>
         <div class="form-group">
            <input type="checkbox" name="treats" value="1">Junior Mints.<br>
            <input type="checkbox" name="treats" value="2">Juji Fruits.<br>
@@ -49,7 +51,12 @@
            <input type="checkbox" name="treats" value="7">Red Rope.<br>
            <input type="checkbox" name="treats" value="8">Hot Dog.<br>
         </div>
+        <button type="submit">Get Ticket!</button>
       </form>
-    </div>
+      <div id="ticket">
+        <p id=info>Movie:  <span class="movie"></span><br>
+        Time:  <span class="time"></span><br>
+        Age:  <span class="age"></span></p>
+      </div>
   </body>
 </html>
