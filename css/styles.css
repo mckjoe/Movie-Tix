@@ -1,0 +1,14 @@
+#ticket {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+  display: none;
+}
+
+h3 {
+  text-align: center;
+}
+
+h5 {
+  text-align: center;
+}

@@ -11,52 +11,59 @@
   <body>
     <div class="container">
       <h3>PhandanJoe</h3>
-      <h5>A Place to order movie tickets!</h5>
-      <p>Please make selections below so we can print you a ticket.</p>
-      <form id="userInput">
-        <p>Please select a movie:</p>
-        <div class="form-group">
-          <select class="form-control" id="movie">
-            <option>Please select one:</option>
-            <option>Dazed and Confused</option>
-            <option>Indiana Jones and the Last Crusade</option>
-            <option>Rosemary's Baby</option>
-            <option>I got the Hook-up</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <select class="form-control" id="age">
-            <option>Please select one:</option>
-            <option>Adult</option>
-            <option>Senior</option>
-            <option>Child</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <select class="form-control" id="time">
-            <option>Please select one:</option>
-            <option>2:00 PM</option>
-            <option>5:00 PM</option>
-            <option>7:00 PM</option>
-            <option>9:00 PM</option>
-          </select>
-        </div>
-        <div class="form-group">
-           <input type="checkbox" name="treats" value="1">Junior Mints.<br>
-           <input type="checkbox" name="treats" value="2">Juji Fruits.<br>
-           <input type="checkbox" name="treats" value="3">Popcorn.<br>
-           <input type="checkbox" name="treats" value="4">Soda.<br>
-           <input type="checkbox" name="treats" value="5">Water.<br>
-           <input type="checkbox" name="treats" value="6">Juice.<br>
-           <input type="checkbox" name="treats" value="7">Red Rope.<br>
-           <input type="checkbox" name="treats" value="8">Hot Dog.<br>
-        </div>
-        <button type="submit">Get Ticket!</button>
-      </form>
-      <div id="ticket">
-        <p id=info>Movie:  <span class="movie"></span><br>
-        Time:  <span class="time"></span><br>
-        Age:  <span class="age"></span></p>
+      <div id ="form-div">
+        <h5>A Place to order movie tickets!</h5>
+        <p>Please make selections below so we can print you a ticket.</p>
+        <form id="userInput">
+          <p>Please select a movie:</p>
+          <div class="form-group">
+            <select class="form-control" id="movie">
+              <option>Please select one:</option>
+              <option>Dazed and Confused</option>
+              <option>Indiana Jones and the Last Crusade</option>
+              <option>Rosemary's Baby</option>
+              <option>I got the Hook-up</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <select class="form-control" id="age">
+              <option>Please select one:</option>
+              <option>Adult</option>
+              <option>Senior</option>
+              <option>Child</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <select class="form-control" id="time">
+              <option>Please select one:</option>
+              <option>2:00 PM</option>
+              <option>5:00 PM</option>
+              <option>7:00 PM</option>
+              <option>9:00 PM</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <input type="checkbox" name="treats" value="1">Junior Mints.<br>
+            <input type="checkbox" name="treats" value="2">Juji Fruits.<br>
+            <input type="checkbox" name="treats" value="3">Popcorn.<br>
+            <input type="checkbox" name="treats" value="4">Soda.<br>
+            <input type="checkbox" name="treats" value="5">Water.<br>
+            <input type="checkbox" name="treats" value="6">Juice.<br>
+            <input type="checkbox" name="treats" value="7">Red Rope.<br>
+            <input type="checkbox" name="treats" value="8">Hot Dog.<br>
+          </div>
+          <button type="submit">Get Ticket!</button>
+        </form>
       </div>
+      <div id="blurb">
+        <p>Thank you for choosing PhandanJoe.  Your ticket information should be available shortly!</p>
+        <div id="ticket">
+          <p id=info>Movie:  <span class="movie"></span><br>
+          Time:  <span class="time"></span><br>
+          Age:  <span class="age"></span><br>
+          Cost:  $<span class="cost"></span></p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

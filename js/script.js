@@ -34,11 +34,12 @@ $(document).ready(function() {
     var newTicket = new Ticket(movie, time, age);
     var ticketFace = newTicket.viewTicket();
     var ticketTotal = newTicket.ticketCost();
-    console.log(ticketFace);
     console.log(ticketTotal);
-
+    $("#form-div").hide();
     $(".movie").text(movie);
     $(".time").text(time);
     $(".age").text(age);
+    $(".cost").text(ticketTotal);
+    $("#ticket").show(8000);
   });
 });
