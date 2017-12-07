@@ -3,6 +3,8 @@
   padding: 10px;
   margin: 10px;
   display: none;
+  background-color: beige;
+  color: red;
 }
 
 h3 {
